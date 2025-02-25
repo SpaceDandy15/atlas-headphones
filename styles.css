@@ -1,0 +1,123 @@
+/* Global Styles - Mobile First Approach */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Centering content with max width of 1000px */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header/Hero Section */
+header {
+    background-image: url('headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover,
+a:active {
+    color: #FF6565;
+}
+
+/* Buttons */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover,
+button:active {
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 80px 15px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Tablet (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    header {
+        padding: 120px 30px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 40px 30px;
+    }
+}
+
+/* Desktop (≥768px) */
+@media (min-width: 768px) {
+    header {
+        padding: 150px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    section {
+        padding: 60px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
