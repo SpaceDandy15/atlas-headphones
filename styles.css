@@ -58,8 +58,8 @@ header {
 /* Hero Content */
 .hero-content {
     position: relative;
-    z-index: 1; /* Ensure content is above the rectangles */
-    text-align: center; /* Center all content */
+    z-index: 1;
+    text-align: center;
 }
 
 /* Hero Text */
@@ -69,7 +69,7 @@ header {
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    color: #FFFFFF; /* Adds space below the main heading */
+    color: #FFFFFF;
 }
 
 /* Hero Subtext */
@@ -78,7 +78,7 @@ header {
     font-size: 16px;
     font-weight: normal;
     line-height: 26px;
-    margin-bottom: 30px; /* Space between subtext and button */
+    margin-bottom: 30px;
     max-width: 335px;
     margin-left: auto;
     margin-right: auto;
@@ -119,9 +119,40 @@ header {
     margin-right: auto; /* Ensure button is centered */
 }
 
-/* Hover Effect for Button */
-.cta-button:hover {
-    background-color: #e54f50; /* Slightly darker color for button hover effect */
+.pentagon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.pentagon {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    background-color: #FF6565;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 20px;
+}
+
+.percent {
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.label {
+    font-size: 16px;
+    line-height: 26px;
 }
 
 /* Mobile Styling */
