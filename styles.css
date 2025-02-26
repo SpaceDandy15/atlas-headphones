@@ -1,0 +1,222 @@
+/* Global Styles - Mobile First Approach */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Header / Hero Section */
+header {
+    position: relative;
+    background-image: url('images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Rectangles (Positioned Absolute near the top-left) */
+.rectangle-1, .rectangle-2, .rectangle-3 {
+    position: absolute;
+    background-color: #A8B5C8;
+    opacity: 1;
+    border-radius: 2px;
+}
+
+/* Keeping rectangles in their original position */
+.rectangle-1 {
+    width: 20px;
+    height: 2px;
+    top: 38px;
+    left: 21px;
+}
+
+.rectangle-2 {
+    width: 13px;
+    height: 2px;
+    top: 50px;
+    left: 21px;
+}
+
+.rectangle-3 {
+    width: 18px;
+    height: 2px;
+    top: 62px;
+    left: 21px;
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 600px; /* Adjust width as needed */
+}
+
+/* Hero Text */
+.hero-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+/* Hero Subtext */
+.hero-subtext {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    margin-bottom: 30px;
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF;
+}
+
+/* Hero Description */
+.hero-description {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px; /* Padding for better readability */
+    margin-top: 20px;
+    opacity: 0.9;
+    color: #FFFFFF;
+}
+
+/* Call to Action Button */
+.cta-button {
+    background-color: #FF6565;
+    color: #FFFFFF;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    width: 162px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 22px;
+    transition: background 0.3s ease;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pentagon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.pentagon {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    background-color: #FF6565;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 20px;
+}
+
+.percent {
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.label {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* Mobile Styling */
+@media (max-width: 480px) {
+    .hero-text {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtext {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .hero-description {
+        width: 90%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+}
+
+/* Tablet (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    header {
+        padding: 120px 30px;
+    }
+
+    .hero-text {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtext {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 40px 30px;
+    }
+}
+
+/* Desktop (≥768px) */
+@media (min-width: 768px) {
+    header {
+        padding: 150px;
+    }
+
+    .hero-text {
+        font-size: 3rem;
+    }
+
+    .hero-subtext {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 60px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
