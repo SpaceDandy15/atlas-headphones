@@ -157,6 +157,23 @@ header {
     line-height: 26px;
 }
 
+.input-name {
+    width: 335px;
+    height: 1px;
+    border: none;
+    background-color: #071629;
+    opacity: 0.1745; /* 17.45% opacity */
+}
+
+footer {
+    background-color: #071629;
+     color: white;
+}
+footer p {
+    margin: 0;
+    opacity: 0.3517; /* 35.17% opacity for the text */
+}
+
 /* Mobile Styling */
 @media (max-width: 480px) {
     .hero-text {
