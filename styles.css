@@ -120,6 +120,17 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+/*icons for what we do**/
+.holberton_school-icon-ic_sound,
+.holberton_school-icon-ic_video,
+.holberton_school-icon-ic_music,
+.holberton_school-icon-ic_hearing {
+    width: 94.2px;  /* Set width */
+    height: 65.36px; /* Set height */
+    font-size: 56px; /* Set font size for the icon */
+    margin: 0.02em;  /* Set margin (or space) as specified */
+    display: inline-block; /* Make sure icons are inline-block */
+}
 
 .pentagon-container {
     display: flex;
