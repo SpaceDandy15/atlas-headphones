@@ -1,18 +1,4 @@
-/* Global Styles - Mobile First Approach */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
-}
-
-/* Header / Hero Section */
+/* Header styles */
 header {
     position: relative;
     background-image: url('images/headphones_hero_1.jpg');
@@ -21,85 +7,88 @@ header {
     background-repeat: no-repeat;
     padding: 150px 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     align-items: center;
 }
 
-/* Rectangles (Positioned Absolute near the top-left) */
-.rectangle-1, .rectangle-2, .rectangle-3 {
+nav {
     position: absolute;
-    background-color: #A8B5C8;
-    opacity: 1;
-    border-radius: 2px;
+    top: 20px;
+    right: 20px;
 }
 
-/* Keeping rectangles in their original position */
-.rectangle-1 {
-    width: 20px;
-    height: 2px;
-    top: 38px;
-    left: 21px;
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
 }
 
-.rectangle-2 {
-    width: 13px;
-    height: 2px;
-    top: 50px;
-    left: 21px;
+.nav-links li {
+    display: inline-block;
 }
 
-.rectangle-3 {
-    width: 18px;
-    height: 2px;
-    top: 62px;
-    left: 21px;
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
 }
 
-/* Hero Content */
+.nav-links a:hover {
+    color: #FF6565
+}
+
 .hero-content {
-    position: relative;
-    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    max-width: 600px; /* Adjust width as needed */
+    color: white;
 }
 
-/* Hero Text */
 .hero-text {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2rem;
+    font-size: 48px;
     font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    color: #FFFFFF;
 }
 
-/* Hero Subtext */
 .hero-subtext {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 26px;
-    margin-bottom: 30px;
-    max-width: 335px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
-/* Hero Description */
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff6565;
+}
+
 .hero-description {
     font-size: 16px;
-    font-weight: normal;
-    line-height: 26px;
-    width: 335px;
+    margin-top: 20px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px; /* Padding for better readability */
-    margin-top: 20px;
-    opacity: 0.9;
-    color: #FFFFFF;
 }
+
 
 /* Call to Action Button */
 .cta-button {
@@ -125,11 +114,12 @@ header {
 .holberton_school-icon-ic_video,
 .holberton_school-icon-ic_music,
 .holberton_school-icon-ic_hearing {
-    width: 94.2px;  /* Set width */
-    height: 65.36px; /* Set height */
-    font-size: 56px; /* Set font size for the icon */
-    margin: 0.02em;  /* Set margin (or space) as specified */
-    display: inline-block; /* Make sure icons are inline-block */
+    width: 94.2px;
+    height: 65.36px;
+    font-size: 56px;
+    margin: 0.02em;
+    display: inline-block;
+    color: #FF6565;
 }
 
 .pentagon-container {
@@ -327,7 +317,6 @@ footer p {
     align-items: center;
 }
 
-
 /* Mobile Styling */
 @media (max-width: 480px) {
     .hero-text {
@@ -347,6 +336,28 @@ footer p {
 
     .cta-button {
         width: 100%;
+    }
+
+    /* Show the hamburger menu */
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /* Ensure the nav links are hidden initially */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #333;
+        padding: 20px;
+        width: 200px;
+    }
+
+    /* Show nav links when checkbox is checked */
+    .menu-toggle:checked + .hamburger-menu + nav .nav-links {
+        display: flex;
     }
 }
 
