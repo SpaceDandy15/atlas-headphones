@@ -8,7 +8,7 @@ Have a fully functional web page that looks the same as the designer page provid
 Not allowed to use Javascript, or any external CSS frameworks.
 
 ## Github Page
-Click [here](add github page url) to view our webpage!
+Click [here](https://harrisongearhart.github.io/Atlas-Headphones-Page.github.io/) to view our webpage!
 
 ## Authors
 [Malik Vance](https://github.com/SpaceDandy15)
