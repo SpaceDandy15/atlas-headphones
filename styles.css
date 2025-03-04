@@ -350,6 +350,10 @@ footer p {
         font-size: 1.5rem;
     }
 
+     body {
+        font-family: 'Source Sans Pro', sans-serif;
+     }
+
     .hero-subtext {
         font-size: 14px;
         line-height: 22px;
@@ -394,6 +398,10 @@ footer p {
         padding: 120px 30px;
     }
 
+     body {
+        font-family: 'Source Sans Pro', sans-serif;
+     }
+
     .hero-text {
         font-size: 2.5rem;
     }
@@ -412,6 +420,10 @@ footer p {
     header {
         padding: 150px;
     }
+
+     body {
+        font-family: 'Source Sans Pro', sans-serif;
+     }
 
     .hero-text {
         font-size: 3rem;
